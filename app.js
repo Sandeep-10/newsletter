@@ -24,10 +24,10 @@ app.post("/",function(req,res){
           }]
       };
       var jsonData=JSON.stringify(data);
-      const url="https://us10.api.mailchimp.com/3.0/lists/f5be51e182";
+      const url="xxx";
       const options={
         method: "POST",
-        auth:"sandeep:9481d4dd5f9c9554cb7851d5023f6770-us10"
+        auth:"xxx"
       }
       const request=https.request(url,options,function(response){
         response.on("data",function(data){
@@ -52,4 +52,3 @@ app.listen(process.env.PORT || 3000,function(){
 });
 
 //
-// 4848b37ea040a1111548bfead37b6ace-us10
